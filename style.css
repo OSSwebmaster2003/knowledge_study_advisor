@@ -543,3 +543,121 @@ nav ul li .count_events {
   border: none;
   cursor: pointer;
 }
+
+/* services section */
+.services_section {
+  margin-top: 100px;
+  width: 100%;
+  padding: 82px calc((100% - 1240px) / 2);
+  background: var(--main-color-linear);
+}
+.services_section .services_section_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.services_section .services_section_wrapper h2 {
+  color: var(--main-color-white);
+}
+.services_section .services_section_wrapper h2 span {
+  color: var(--main-color-orange);
+}
+.services_section .services_section_wrapper .services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+.services_section .services_section_wrapper .services > div {
+  height: 282px;
+  border-radius: 16px;
+  border-bottom: 3px solid var(--main-color-orange-2, #f79222);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 50px 30px 68px 30px;
+  position: relative;
+  cursor: pointer;
+}
+.services_section .services_section_wrapper .services .service_card h1 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: transparent;
+  font-size: 60px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 0.5px white;
+  text-stroke: 0.5px white;
+  font-weight: 600;
+}
+.services_section .service_card .service_card_wrapper svg {
+  width: 48px;
+  height: 48px;
+  fill: var(--main-color-orange);
+}
+.services_section .service_card .service_card_wrapper h3 {
+  margin-top: 24px;
+  color: var(--main-color-white);
+  letter-spacing: -0.18px;
+  font-family: "Work Sans", sans-serif;
+}
+.services_section .service_card .service_card_wrapper p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 150%;
+  color: var(--main-color-white);
+}
+.services_section .services_section_wrapper .services > div:hover {
+  background-color: var(--main-color-white);
+}
+.services_section .services_section_wrapper .services .service_card:hover h1 {
+  background: var(--main-color-linear);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.services_section
+  .services_section_wrapper
+  .services
+  .service_card:hover
+  .service_card_wrapper
+  p {
+  color: var(--main-color-black);
+}
+.services_section
+  .services_section_wrapper
+  .services
+  .service_card:hover
+  .service_card_wrapper
+  h3 {
+  color: var(--main-color-black);
+}
+.services_section .services_section_wrapper .services .enquire_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.services_section .services_section_wrapper .services .enquire_card h3 {
+  color: var(--main-color-white);
+  letter-spacing: -0.18px;
+  font-family: Work Sans;
+}
+.services_section .services_section_wrapper .services .enquire_card button {
+  width: 148px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: var(--main-color-orange);
+  color: var(--main-color-white);
+  border: none;
+  text-transform: uppercase;
+}
+.services_section .services_section_wrapper .services .enquire_card:hover h3 {
+  color: var(--main-color-black);
+}
