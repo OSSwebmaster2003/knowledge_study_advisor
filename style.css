@@ -661,3 +661,104 @@ nav ul li .count_events {
 .services_section .services_section_wrapper .services .enquire_card:hover h3 {
   color: var(--main-color-black);
 }
+
+/* reviews section */
+.reviews_section {
+  position: relative;
+  margin-top: 100px;
+  padding: 0 calc((100% - 1240px) / 2);
+  width: 100%;
+}
+.reviews_section .reviews_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews_section .reviews_item .review_video {
+  position: relative;
+  width: 650px;
+  height: 780px;
+}
+.reviews_section .reviews_item .review_video .for_image {
+  width: 650px;
+  height: 756px;
+  position: relative;
+}
+.reviews_section .reviews_item .review_video .for_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.reviews_section .reviews_item .review_video .for_image svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.reviews_section .reviews_item .review_video .student_name {
+  width: 328px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--main-color-blue);
+  border-radius: 100px;
+  color: var(--main-color-white);
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+  left: calc(50% - 164px);
+}
+.reviews_section .reviews_item .review_text {
+  position: relative;
+  width: calc(100% - 700px);
+}
+.reviews_section .reviews_item .review_text .review_card {
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--main-color-linear);
+  position: relative;
+}
+.reviews_section .reviews_item .review_text .review_card .quote_open {
+  width: 40px;
+  height: 40px;
+}
+.reviews_section .reviews_item .review_text .review_card .quote_open svg {
+  fill: var(--main-color-orange);
+}
+.reviews_section .reviews_item .review_text .review_card .quote_close {
+  width: 40px;
+  height: 40px;
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.reviews_section .reviews_item .review_text .review_card .quote_close svg {
+  fill: var(--main-color-orange);
+}
+.reviews_section .reviews_item .review_text .review_card p {
+  padding: 10px 40px;
+  padding-bottom: 30px;
+  font-size: 17px;
+  color: var(--main-color-white);
+  line-height: 160%;
+  font-weight: 300;
+}
+.reviews_section #reviews_carousel .owl-nav {
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.reviews_section .reviews-counter {
+  position: absolute;
+  bottom: 205px;
+  right: 566px;
+}
