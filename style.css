@@ -1251,3 +1251,71 @@ nav ul li .count_events {
   letter-spacing: 0.72px;
   text-transform: uppercase;
 }
+.insights_section {
+  margin-bottom: 200px;
+}
+
+/* location section  */
+.locations_section {
+  position: relative;
+  padding: 145px calc((100% - 1240px) / 2);
+  padding-bottom: 60px;
+  background: var(--main-color-linear);
+}
+.locations_section .news_letter_subscription {
+  width: 1240px;
+  height: 190px;
+  border-radius: 16px;
+  background: var(--neutral-grey-01);
+  position: absolute;
+  top: -95px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.locations_section .news_letter_subscription .subscription_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.locations_section .news_letter_subscription .subscription_text h6 {
+  line-height: 150%;
+}
+.locations_section .news_letter_subscription form {
+  width: 500px;
+}
+.locations_section .news_letter_subscription form .input_wrapper {
+  width: 100%;
+  height: 46px;
+  border-radius: 120px;
+  border: 0.6px solid var(--neutral-grey-03);
+  background: var(--main-color-white);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.locations_section .news_letter_subscription form .input_wrapper button {
+  width: 130px;
+  height: 46px;
+  border: none;
+  border-radius: 100px;
+  background: var(--main-color-linear);
+  color: var(--main-color-white);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+.locations_section .news_letter_subscription form .input_wrapper input {
+  width: calc(100% - 150px);
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  background: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--neutral-grey-05);
+}
