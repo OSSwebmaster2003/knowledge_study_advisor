@@ -32,6 +32,10 @@ h1 {
   font-size: 54px;
   font-weight: 700;
 }
+h1 span {
+  font-size: 54px;
+  font-weight: 700;
+}
 h2 {
   font-size: 32px;
   font-weight: 700;
@@ -65,6 +69,12 @@ span.date {
   font-size: 13px;
   font-weight: 400;
   color: var(--neutral-grey-03);
+}
+.title-blue {
+  color: var(--main-color-blue);
+}
+.title-blue span {
+  color: var(--main-color-purple);
 }
 
 body {
@@ -251,4 +261,101 @@ nav ul li .count_events {
   color: var(--main-color-white);
   top: 10px;
   right: -2px;
+}
+
+/* banner carousel section */
+.banner_carousel {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.banner_carousel div {
+  height: 100%;
+}
+.banner_carousel #banner_carousel .banner_carousel_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-color: #e4f4fc;
+}
+.banner_carousel #banner_carousel .banner_carousel_item .banner_left {
+  padding-left: 100px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.banner_carousel #banner_carousel .banner_carousel_item .banner_left h4 {
+  text-transform: uppercase;
+  letter-spacing: 3.36px;
+}
+.banner_carousel #banner_carousel .banner_carousel_item .banner_left h1 {
+  width: 520px;
+}
+.banner_carousel #banner_carousel .banner_left .enquire_button {
+  margin-top: 32px;
+  width: 148px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: var(--main-color-linear);
+  border: none;
+  cursor: pointer;
+  color: var(--main-color-white);
+}
+.banner_carousel #banner_carousel .banner_left .whatsapp {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px 16px 16px 0px;
+  background: #33d26b;
+  border: none;
+  position: absolute;
+  bottom: 66px;
+  left: 20px;
+}
+.banner_carousel #banner_carousel .banner_right {
+  height: 100%;
+  position: relative;
+}
+.banner_carousel #banner_carousel .banner_right .facebook {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px 16px 0px 16px;
+  background: #1b80fb;
+  border: none;
+  position: absolute;
+  right: 20px;
+  bottom: 66px;
+}
+.banner_carousel .banner-counter {
+  position: absolute;
+  height: 20px;
+  font-size: 14px;
+  color: var(--main-color-blue);
+  font-weight: 400;
+  letter-spacing: -0.28px;
+  bottom: 27px;
+  left: 136px;
+  z-index: 2;
+}
+.banner_carousel #banner_carousel .owl-nav {
+  height: 20px;
+  position: absolute;
+  bottom: 27px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 52px;
+}
+.banner_carousel #banner_carousel .owl-dots {
+  display: none;
 }
