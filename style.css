@@ -1,7 +1,9 @@
 /* variables */
 :root {
   --main-color-black: #35353a;
+  --neutral-grey-05: #86878a;
   --neutral-grey-03: #d0d0d1;
+  --neutral-grey-01: #f5f5f6;
   --main-color-orange: #f79222;
   --main-color-linear: linear-gradient(110deg, #5a1679 3.87%, #ae5b40 109.26%);
   --main-color-white: #fff;
@@ -130,4 +132,89 @@ header .right_header svg {
 }
 header .right_header svg:hover {
   fill: var(--main-color-orange);
+}
+
+/* search header  */
+.search_header {
+  width: 100%;
+  padding: 10px calc((100% - 1440px) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--main-color-white);
+}
+.search_header .search_header_left img {
+  width: 80px;
+  height: 80px;
+}
+.search_header .search_header_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.search_header .search_header_right .search_input {
+  width: 870px;
+  height: 45px;
+  border: 0.5px solid var(--neutral-grey-03);
+  border-right: 0;
+  background: var(--main-color-white);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search_header .search_header_right .search_input .filter_dropdown {
+  width: 130px;
+  height: 100%;
+  border-right: 0.5px solid var(--neutral-grey-03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.search_header .search_header_right .search_input .filter_dropdown p {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--neutral-grey-05);
+}
+.search_header .search_header_right .search_input .filter_dropdown svg {
+  fill: var(--neutral-grey-05);
+  width: 12px;
+  height: 12px;
+}
+.search_header .search_header_right .search_input .search_button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--neutral-grey-03);
+  border: 1px solid var(--neutral-grey-01);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search_header .search_header_right .search_input .search_button svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--neutral-grey-05);
+  cursor: pointer;
+}
+.search_header .search_header_right .search_input input {
+  width: calc(100% - 180px);
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: var(--neutral-grey-05);
+}
+.search_header .search_header_right .apply_button {
+  width: 153px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: var(--main-color-linear);
+  border: none;
+  color: var(--main-color-white);
 }
