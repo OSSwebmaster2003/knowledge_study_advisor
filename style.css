@@ -901,3 +901,80 @@ nav ul li .count_events {
   height: 5px;
   bottom: 38px;
 }
+
+/* glimpses section */
+.glimpses_section {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0 calc((100% - 1240px) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+.glimpses_section .glimpse_images {
+  width: 100%;
+}
+.glimpses_section .glimpse_images img {
+  border-radius: 16px;
+}
+.glimpses_section .glimpse_images .top_images {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.glimpses_section .glimpse_images .top_images .image1 {
+  width: 212px;
+  height: 212px;
+}
+.glimpses_section .glimpse_images .top_images .image2 {
+  width: 310px;
+}
+.glimpses_section .glimpse_images .top_images .image3 {
+  width: 298px;
+  margin-bottom: 60px;
+  height: 201px;
+}
+.glimpses_section .glimpse_images .top_images .image4 {
+  width: 390px;
+  margin-bottom: 60px;
+  height: 270px;
+}
+.glimpses_section .glimpse_images .bottom_images {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: 30px;
+}
+.glimpses_section .glimpse_images .bottom_images .image5 {
+  width: 370px;
+  height: 245px;
+}
+.glimpses_section .glimpse_images .bottom_images .image6 {
+  width: 175px;
+  height: 180px;
+}
+.glimpses_section .glimpse_images .bottom_images .image7 {
+  width: 534px;
+  height: 355px;
+  margin-top: -50px;
+}
+.glimpses_section > button {
+  width: 177px;
+  height: 46px;
+  border-radius: 100px;
+  border: 0.5px solid var(--main-color-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: inherit;
+  color: var(--main-color-purple);
+  cursor: pointer;
+}
+.glimpses_section > button:hover {
+  background: var(--main-color-purple);
+  color: var(--main-color-white);
+}
