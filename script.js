@@ -101,3 +101,19 @@ $(document).ready(function () {
     owl.trigger("to.owl.carousel", [value, 300]);
   });
 });
+
+// accordion
+var accItem = document.getElementsByClassName("faq_accordion_item");
+var accHD = document.getElementsByClassName("faq_accordion_heading");
+for (i = 0; i < accHD.length; i++) {
+  accHD[i].addEventListener("click", toggleItem, false);
+}
+function toggleItem() {
+  var itemClass = this.parentNode.className;
+  for (i = 0; i < accItem.length; i++) {
+    accItem[i].className = "faq_accordion_item close";
+  }
+  if (itemClass == "faq_accordion_item close") {
+    this.parentNode.className = "faq_accordion_item  open";
+  }
+}
