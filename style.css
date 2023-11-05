@@ -40,6 +40,10 @@ h2 {
   font-size: 32px;
   font-weight: 700;
 }
+h2 span {
+  font-size: 32px;
+  font-weight: 700;
+}
 h3 {
   font-size: 18px;
   font-weight: 600;
@@ -358,4 +362,177 @@ nav ul li .count_events {
 }
 .banner_carousel #banner_carousel .owl-dots {
   display: none;
+}
+
+.destinations_carousel {
+  width: 100%;
+  padding: 0 calc((100% - 1440px) / 2);
+  margin-top: 100px;
+  position: relative;
+}
+.destinations_carousel h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.destinations_carousel #destinations_carousel {
+  height: 350px;
+}
+.destinations_carousel #destinations_carousel .destination_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.destinations_carousel #destinations_carousel .destination_card .card_image {
+  width: 100%;
+  height: 218px;
+}
+.destinations_carousel
+  #destinations_carousel
+  .destination_card
+  .card_image
+  img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.destinations_carousel #destinations_carousel .destination_card .card_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.destinations_carousel #destinations_carousel .destination_card .card_text img {
+  width: 20px;
+  height: 20px;
+}
+.destinations_carousel
+  #destinations_carousel
+  .destination_card:hover
+  .card_text
+  h3 {
+  color: var(--main-color-purple);
+}
+.destinations_carousel #destinations_carousel .owl-nav {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.destinations_carousel #destinations_carousel .owl-dots {
+  display: none;
+}
+.destinations_carousel progress {
+  position: absolute;
+  bottom: 22.5px;
+  height: 5px;
+  width: calc(100% - 550px);
+  margin: 0 auto;
+  left: 275px;
+}
+
+/* contactv form section */
+.contact_form {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0 calc((100% - 1240px) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+.contact_form .contact_image img {
+  border-radius: 16px;
+}
+.contact_form form {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.contact_form form h6 {
+  color: var(--main-color-black);
+  line-height: 150%;
+}
+.contact_form form .input {
+  width: 100%;
+  height: 46px;
+  border-radius: 120px;
+  border: 0.5px solid var(--neutral-grey-03);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+}
+.contact_form form .input input {
+  border: none;
+  outline: none;
+  color: var(--neutral-grey-05);
+}
+.contact_form form .accordion {
+  width: 100%;
+  height: 46px;
+  border-radius: 120px;
+  border: 0.5px solid var(--neutral-grey-03);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contact_form form .accordion .accordion_header {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+}
+.contact_form form .accordion .accordion_header svg {
+  fill: var(--neutral-grey-03);
+}
+.contact_form form .accordion .accordion_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.contact_form form .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.contact_form form .checkbox p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 150%;
+  color: var(--main-color-black);
+}
+.contact_form form .checkbox p span {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 150%;
+  color: var(--main-color-purple);
+}
+.contact_form form .submit_button {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: var(--main-color-linear);
+  color: var(--main-color-white);
+  border: none;
+  cursor: pointer;
 }
