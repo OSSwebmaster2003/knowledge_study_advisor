@@ -26,6 +26,7 @@ a {
 li {
   font-size: 14px;
   font-weight: 600;
+  list-style-type: none;
 }
 h1 {
   font-size: 54px;
@@ -217,4 +218,37 @@ header .right_header svg:hover {
   background: var(--main-color-linear);
   border: none;
   color: var(--main-color-white);
+}
+nav {
+  width: 100%;
+  padding: 0 calc((100% - 1440px) / 2);
+  background: var(--main-color-linear);
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li {
+  padding: 16px 18px;
+  border-radius: 70px;
+  position: relative;
+}
+nav ul li:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+nav ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-color-white);
+  text-transform: uppercase;
+}
+nav ul li .count_events {
+  position: absolute;
+  padding: 0 5px;
+  background: var(--main-color-orange);
+  border-radius: 50%;
+  color: var(--main-color-white);
+  top: 10px;
+  right: -2px;
 }
