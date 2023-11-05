@@ -1,0 +1,133 @@
+/* variables */
+:root {
+  --main-color-black: #35353a;
+  --neutral-grey-03: #d0d0d1;
+  --main-color-orange: #f79222;
+  --main-color-linear: linear-gradient(110deg, #5a1679 3.87%, #ae5b40 109.26%);
+  --main-color-white: #fff;
+  --main-color-blue: #4a7bb4;
+  --main-color-purple: #702d8d;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.1s linear all;
+}
+p {
+  font-size: 14px;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+li {
+  font-size: 14px;
+  font-weight: 600;
+}
+h1 {
+  font-size: 54px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+}
+span {
+  font-size: 14px;
+  font-weight: 400;
+}
+span.location {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--main-color-purple);
+}
+span.date {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--neutral-grey-03);
+}
+
+body {
+  width: 100%;
+}
+.website_wrapper {
+  width: 100%;
+}
+/* header */
+header {
+  padding: 11.5px calc((100% - 1440px) / 2);
+  width: 100%;
+  background: var(--main-color-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h3 {
+  color: var(--neutral-grey-03);
+}
+header .left_header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+header .left_header > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+header .left_header div svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-color-white);
+}
+header .left_header div span {
+  color: var(--neutral-grey-03);
+  text-transform: uppercase;
+}
+header .left_header div span a {
+  color: var(--neutral-white);
+}
+header .left_header div:hover svg {
+  fill: var(--main-color-orange);
+}
+header .left_header div:hover span {
+  color: var(--main-color-orange);
+}
+header .right_header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+header .right_header a {
+  width: 20px;
+  height: 20px;
+}
+header .right_header svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--neutral-grey-03);
+  cursor: pointer;
+}
+header .right_header svg:hover {
+  fill: var(--main-color-orange);
+}
