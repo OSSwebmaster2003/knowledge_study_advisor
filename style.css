@@ -489,6 +489,7 @@ nav ul li .count_events {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .contact_form form .accordion .accordion_header {
   width: 100%;
@@ -502,9 +503,15 @@ nav ul li .count_events {
   fill: var(--neutral-grey-03);
 }
 .contact_form form .accordion .accordion_content {
+  display: none;
+  position: absolute;
+  min-width: 100%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
+}
+.contact_form form .accordion .show {
+  display: block;
 }
 .contact_form form .checkbox {
   display: flex;

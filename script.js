@@ -54,20 +54,17 @@ $(document).ready(function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const accordionItems = document.querySelectorAll(".accordion");
+  const dropdownButton = document.querySelector(".accordion_header");
+  const dropdownContent = document.querySelector(".accordion_content");
 
-  accordionItems.forEach((item) => {
-    const header = item.querySelector(".accordion_header");
-    const content = item.querySelector(".accordion_content");
+  dropdownButton.addEventListener("click", () => {
+    dropdownContent.classList.toggle("show");
+  });
 
-    header.addEventListener("click", () => {
-      item.classList.toggle("active");
-
-      if (item.classList.contains("active")) {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } else {
-        content.style.maxHeight = 0;
-      }
-    });
+  // Close the dropdown when clicking outside of it
+  window.addEventListener("click", (event) => {
+    if (!event.target.matches(".dropdown-button")) {
+      dropdownContent.classList.remove("show");
+    }
   });
 });
