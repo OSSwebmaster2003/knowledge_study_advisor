@@ -1521,11 +1521,28 @@ footer .footer_bottom {
   .banner_carousel .banner-counter {
     left: 86px;
   }
+  .destinations_carousel {
+    padding: 0 50px;
+  }
+  .destinations_carousel progress {
+    width: calc(100% - 300px);
+    left: 150px;
+  }
 }
 @media (max-width: 1200px) {
   .banner_carousel #banner_carousel .banner_carousel_item {
     background-size: contain;
     background-position: bottom;
+  }
+  .destinations_carousel progress {
+    width: calc(100% - 200px);
+    left: 100px;
+  }
+  .destinations_carousel #destinations_carousel .destination_card .card_image {
+    height: 170px;
+  }
+  .destinations_carousel #destinations_carousel {
+    height: 300px;
   }
 }
 @media (max-width: 1130px) {
@@ -1534,6 +1551,14 @@ footer .footer_bottom {
   }
   nav ul li a {
     font-size: 11px;
+  }
+}
+@media (max-width: 1100px) {
+  .destinations_carousel #destinations_carousel .destination_card .card_image {
+    height: 210px;
+  }
+  .destinations_carousel #destinations_carousel {
+    height: 350px;
   }
 }
 @media (max-width: 1010px) {
@@ -1582,8 +1607,18 @@ footer .footer_bottom {
   .banner_carousel .banner-counter {
     left: 56px;
   }
+  .destinations_carousel {
+    padding: 0 20px;
+  }
 }
-/* 880px */
+@media (max-width: 900px) {
+  .destinations_carousel #destinations_carousel .destination_card .card_image {
+    height: 180px;
+  }
+  .destinations_carousel #destinations_carousel {
+    height: 320px;
+  }
+}
 @media (max-width: 880px) {
   header .mobile_menu_opener {
     display: flex;
@@ -1695,6 +1730,15 @@ footer .footer_bottom {
   }
   h1 span {
     font-size: 36px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h2 span {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 16px;
   }
   .search_header .search_header_right .search_input {
     height: 36px;
@@ -1818,6 +1862,14 @@ footer .footer_bottom {
     height: 40px;
     border-radius: 10px 10px 0px 10px;
     bottom: 90px;
+  }
+  .destinations_carousel {
+    padding: 0 10px;
+    margin-top: 50px;
+  }
+  .destinations_carousel progress {
+    width: calc(100% - 100px);
+    left: 50px;
   }
 }
 
