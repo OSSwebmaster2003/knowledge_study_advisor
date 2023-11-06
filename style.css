@@ -902,8 +902,8 @@ nav .mobile_menu_closer {
 }
 .events_section .events_wrapper .events_carousel progress {
   position: absolute;
-  width: calc(100% - 1400px);
-  left: calc(380px);
+  width: calc(572px - 100px);
+  left: 98px;
   height: 5px;
   bottom: 38px;
 }
@@ -1555,6 +1555,19 @@ footer .footer_bottom {
     width: 100%;
     height: 660px;
   }
+  .events_section {
+    padding: 0 50px;
+  }
+  .events_section .events_wrapper .events_carousel {
+    width: 572px;
+    padding-bottom: 20px;
+  }
+  .events_section .events_wrapper .events_image {
+    width: calc(100% - 632px);
+  }
+  .events_section .events_wrapper .events_carousel progress {
+    bottom: 12px;
+  }
 }
 @media (max-width: 1200px) {
   .banner_carousel #banner_carousel .banner_carousel_item {
@@ -1605,6 +1618,19 @@ footer .footer_bottom {
   }
   .reviews_section .reviews_item .review_text .review_card {
     margin-top: 15px;
+  }
+  .events_section .events_wrapper {
+    justify-content: space-between;
+  }
+  .events_section .events_wrapper .events_carousel {
+    width: 450px;
+  }
+  .events_section .events_wrapper .events_image {
+    width: calc(100% - 510px);
+    height: 500px;
+  }
+  .events_section .events_wrapper .events_carousel progress {
+    width: calc(450px - 100px);
   }
 }
 @media (max-width: 1130px) {
@@ -1729,6 +1755,13 @@ footer .footer_bottom {
   .reviews_section .reviews-counter {
     right: 260px;
   }
+  .events_section {
+    padding: 0 20px;
+  }
+  .events_section .events_wrapper .events_carousel progress {
+    width: calc(450px - 60px);
+    left: 50px;
+  }
 }
 @media (max-width: 950px) {
   .reviews_section .reviews_item .review_text {
@@ -1755,6 +1788,19 @@ footer .footer_bottom {
   .contact_form form {
     width: 100%;
     gap: 16px;
+  }
+  .events_section .events_wrapper .events_carousel {
+    width: 380px;
+  }
+  .events_section .events_wrapper {
+    gap: 30px;
+  }
+  .events_section .events_wrapper .events_image {
+    width: calc(100% - 410px);
+  }
+  .events_section .events_wrapper .events_carousel progress {
+    width: calc(450px - 140px);
+    left: 55px;
   }
 }
 @media (max-width: 880px) {
@@ -1963,6 +2009,16 @@ footer .footer_bottom {
     left: calc(50% - 10px);
     bottom: 25px;
   }
+  .events_section .events_wrapper .events_image {
+    display: none;
+  }
+  .events_section .events_wrapper .events_carousel {
+    width: 100%;
+  }
+  .events_section .events_wrapper .events_carousel progress {
+    width: calc(100% - 140px);
+    left: 70px;
+  }
 }
 @media (max-width: 700px) {
   header .left_header div span {
@@ -2091,6 +2147,28 @@ footer .footer_bottom {
     margin-top: 50px;
     padding: 0 10px;
   }
+  .events_section {
+    margin-top: 50px;
+    padding: 0 10px;
+  }
+  .events_section
+    .events_wrapper
+    .events_carousel
+    #events_carousel
+    .events_card
+    .events_inner_card
+    .card_image {
+    width: 124px;
+  }
+  .events_section
+    .events_wrapper
+    .events_carousel
+    #events_carousel
+    .events_card
+    .events_inner_card
+    .card_text {
+    width: calc(100% - 140px);
+  }
 }
 @media (max-width: 450px) {
   .services_section .services_section_wrapper .services {
@@ -2135,6 +2213,33 @@ footer .footer_bottom {
   .reviews_section .reviews_item .review_text .review_card p {
     padding: 10px;
     padding-bottom: 50px;
+  }
+  .events_section
+    .events_wrapper
+    .events_carousel
+    #events_carousel
+    .events_card
+    .events_inner_card
+    .card_image {
+    width: 100px;
+    height: 80px;
+  }
+  .events_section
+    .events_wrapper
+    .events_carousel
+    #events_carousel
+    .events_card
+    .events_inner_card {
+    gap: 8px;
+  }
+  .events_section
+    .events_wrapper
+    .events_carousel
+    #events_carousel
+    .events_card
+    .events_inner_card
+    .card_text {
+    width: calc(100% - 108px);
   }
 }
 @media (max-width: 360px) {
