@@ -1528,6 +1528,9 @@ footer .footer_bottom {
     width: calc(100% - 300px);
     left: 150px;
   }
+  .contact_form {
+    padding: 0 50px;
+  }
 }
 @media (max-width: 1200px) {
   .banner_carousel #banner_carousel .banner_carousel_item {
@@ -1544,6 +1547,17 @@ footer .footer_bottom {
   .destinations_carousel #destinations_carousel {
     height: 300px;
   }
+  .contact_form .contact_image {
+    width: 500px;
+    height: 730px;
+  }
+  .contact_form .contact_image img {
+    width: 100%;
+    height: 100%;
+  }
+  .contact_form form {
+    width: calc(100% - 555px);
+  }
 }
 @media (max-width: 1130px) {
   nav ul li {
@@ -1559,6 +1573,28 @@ footer .footer_bottom {
   }
   .destinations_carousel #destinations_carousel {
     height: 350px;
+  }
+  .contact_form {
+    gap: 30px;
+  }
+  .contact_form .contact_image {
+    width: 400px;
+    height: 580px;
+  }
+  .contact_form form {
+    width: calc(100% - 430px);
+  }
+  .contact_form form .input {
+    height: 40px;
+  }
+  .contact_form form .accordion {
+    height: 40px;
+  }
+  .contact_form form .submit_button {
+    height: 40px;
+  }
+  .contact_form form {
+    gap: 12px;
   }
 }
 @media (max-width: 1010px) {
@@ -1610,6 +1646,9 @@ footer .footer_bottom {
   .destinations_carousel {
     padding: 0 20px;
   }
+  .contact_form {
+    padding: 0 20px;
+  }
 }
 @media (max-width: 900px) {
   .destinations_carousel #destinations_carousel .destination_card .card_image {
@@ -1617,6 +1656,13 @@ footer .footer_bottom {
   }
   .destinations_carousel #destinations_carousel {
     height: 320px;
+  }
+  .contact_form .contact_image {
+    display: none;
+  }
+  .contact_form form {
+    width: 100%;
+    gap: 16px;
   }
 }
 @media (max-width: 880px) {
@@ -1870,6 +1916,10 @@ footer .footer_bottom {
   .destinations_carousel progress {
     width: calc(100% - 100px);
     left: 50px;
+  }
+  .contact_form {
+    margin-top: 50px;
+    padding: 0 10px;
   }
 }
 
