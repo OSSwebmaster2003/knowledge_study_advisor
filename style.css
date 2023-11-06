@@ -1531,6 +1531,9 @@ footer .footer_bottom {
   .contact_form {
     padding: 0 50px;
   }
+  .services_section {
+    padding: 80px 50px;
+  }
 }
 @media (max-width: 1200px) {
   .banner_carousel #banner_carousel .banner_carousel_item {
@@ -1596,6 +1599,9 @@ footer .footer_bottom {
   .contact_form form {
     gap: 12px;
   }
+  .services_section .service_card .service_card_wrapper h3 {
+    margin-top: 15px;
+  }
 }
 @media (max-width: 1010px) {
   nav ul li a {
@@ -1648,6 +1654,19 @@ footer .footer_bottom {
   }
   .contact_form {
     padding: 0 20px;
+  }
+  .services_section .services_section_wrapper .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+  .services_section {
+    padding: 90px 20px;
+  }
+  .services_section .services_section_wrapper h2 {
+    text-align: center;
   }
 }
 @media (max-width: 900px) {
@@ -1808,6 +1827,12 @@ footer .footer_bottom {
   .search_header .search_header_right .search_input input {
     width: calc(100% - 100px - 40px);
   }
+  .services_section .service_card .service_card_wrapper p {
+    font-size: 12px;
+  }
+  .services_section .services_section_wrapper .services > div {
+    padding: 30px 15px 55px 15px;
+  }
 }
 @media (max-width: 700px) {
   header .left_header div span {
@@ -1826,6 +1851,13 @@ footer .footer_bottom {
   }
   .banner_carousel {
     height: 490px;
+  }
+  .services_section .services_section_wrapper .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
   }
 }
 @media (max-width: 600px) {
@@ -1921,8 +1953,20 @@ footer .footer_bottom {
     margin-top: 50px;
     padding: 0 10px;
   }
+  .services_section {
+    margin-top: 50px;
+    padding: 50px 10px;
+  }
 }
-
+@media (max-width: 450px) {
+  .services_section .services_section_wrapper .services {
+    display: flex;
+    flex-direction: column;
+  }
+  .services_section .service_card .service_card_wrapper p {
+    font-size: 15px;
+  }
+}
 @media (max-width: 400px) {
   header .left_header > div:first-child {
     display: none;
