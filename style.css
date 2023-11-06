@@ -292,7 +292,7 @@ nav .mobile_menu_closer {
   background-color: #e4f4fc;
 }
 .banner_carousel #banner_carousel .banner_carousel_item .banner_left {
-  padding-left: 100px;
+  padding-left: calc((100% - 1240px) / 2);
   width: 50%;
   height: 100%;
   display: flex;
@@ -1506,6 +1506,27 @@ footer .footer_bottom {
     right: -5px;
     font-size: 12px;
   }
+  .banner_carousel #banner_carousel .banner_carousel_item .banner_left {
+    padding-left: 50px;
+  }
+  .banner_carousel #banner_carousel .banner_left .whatsapp {
+    left: 50px;
+  }
+  .banner_carousel #banner_carousel .banner_right .facebook {
+    right: 50px;
+  }
+  .banner_carousel #banner_carousel .owl-nav {
+    left: 50px;
+  }
+  .banner_carousel .banner-counter {
+    left: 86px;
+  }
+}
+@media (max-width: 1200px) {
+  .banner_carousel #banner_carousel .banner_carousel_item {
+    background-size: contain;
+    background-position: bottom;
+  }
 }
 @media (max-width: 1130px) {
   nav ul li {
@@ -1545,6 +1566,21 @@ footer .footer_bottom {
   }
   nav {
     padding: 0 20px;
+  }
+  .banner_carousel #banner_carousel .banner_carousel_item .banner_left {
+    padding-left: 20px;
+  }
+  .banner_carousel #banner_carousel .banner_left .whatsapp {
+    left: 20px;
+  }
+  .banner_carousel #banner_carousel .banner_right .facebook {
+    right: 20px;
+  }
+  .banner_carousel #banner_carousel .owl-nav {
+    left: 20px;
+  }
+  .banner_carousel .banner-counter {
+    left: 56px;
   }
 }
 /* 880px */
@@ -1630,6 +1666,12 @@ footer .footer_bottom {
   header h3:nth-child(4) {
     display: none;
   }
+  .banner_carousel {
+    height: 500px;
+  }
+  .banner_carousel #banner_carousel .banner_carousel_item .banner_left {
+    width: 80%;
+  }
 }
 @media (max-width: 850px) {
   header .right_header {
@@ -1644,6 +1686,15 @@ footer .footer_bottom {
   }
   h5 span {
     font-size: 12px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h1 span {
+    font-size: 36px;
   }
   .search_header .search_header_right .search_input {
     height: 36px;
@@ -1683,6 +1734,9 @@ footer .footer_bottom {
   .search_header .search_header_right {
     width: calc(100% - 80px);
   }
+  .banner_carousel {
+    height: 490px;
+  }
 }
 @media (max-width: 600px) {
   header {
@@ -1719,7 +1773,54 @@ footer .footer_bottom {
   nav ul {
     width: 80%;
   }
+  .banner_carousel #banner_carousel .banner_carousel_item .banner_left {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .banner_carousel #banner_carousel .banner_carousel_item {
+    background-image: none !important;
+  }
+  .banner_carousel #banner_carousel .banner_carousel_item .banner_left h1 {
+    width: auto;
+  }
+  .banner_carousel {
+    height: 400px;
+  }
+  .banner_carousel #banner_carousel .banner_left .whatsapp {
+    left: 10px;
+  }
+  .banner_carousel #banner_carousel .banner_right .facebook {
+    right: 10px;
+  }
+  .banner_carousel .banner-counter {
+    left: 46px;
+  }
+  .banner_carousel #banner_carousel .owl-nav {
+    left: 10px;
+  }
+  .banner_carousel #banner_carousel .banner_carousel_item .banner_left {
+    justify-content: flex-start;
+    padding-top: 80px;
+  }
+  .banner_carousel #banner_carousel .banner_left .enquire_button {
+    margin-top: 15px;
+    width: 100px;
+    height: 36px;
+  }
+  .banner_carousel #banner_carousel .banner_left .whatsapp {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px 10px 10px 0px;
+    bottom: 90px;
+  }
+  .banner_carousel #banner_carousel .banner_right .facebook {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px 10px 0px 10px;
+    bottom: 90px;
+  }
 }
+
 @media (max-width: 400px) {
   header .left_header > div:first-child {
     display: none;
@@ -1741,5 +1842,16 @@ footer .footer_bottom {
   }
   nav ul {
     width: 90%;
+  }
+}
+@media (max-width: 360px) {
+  .banner_carousel #banner_carousel .banner_carousel_item .banner_left {
+    padding-top: 30px;
+  }
+  .banner_carousel #banner_carousel .banner_left .whatsapp {
+    bottom: 60px;
+  }
+  .banner_carousel #banner_carousel .banner_right .facebook {
+    bottom: 60px;
   }
 }
