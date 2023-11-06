@@ -1319,3 +1319,49 @@ nav ul li .count_events {
   font-weight: 300;
   color: var(--neutral-grey-05);
 }
+.locations_section h2 {
+  color: var(--main-color-white);
+  font-size: 32px;
+  font-weight: 700;
+}
+.locations_section h2 span {
+  color: var(--main-color-orange);
+}
+.locations_section .location_cards {
+  margin-top: 32px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+}
+.locations_section .location_cards .location_card {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: inherit;
+}
+.locations_section .location_cards .location_card h4 {
+  color: var(--main-color-white);
+  line-height: 140%;
+}
+.locations_section .location_cards .location_card p {
+  margin-top: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+  color: var(--main-color-white);
+}
+.locations_section .location_cards .location_card a {
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--main-color-orange);
+  letter-spacing: 0.72px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
