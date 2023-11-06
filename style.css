@@ -1,3 +1,25 @@
+/* font family */
+@font-face {
+  font-family: "bahnschript";
+  src: url("./bahnschrift/BAHNSCHRIFT.TTF");
+}
+@font-face {
+  font-family: "work-sans";
+  src: url("./work-sans/WorkSans-Black.ttf");
+}
+@font-face {
+  font-family: "work-sans-bold";
+  src: url("./work-sans/WorkSans-Bold.ttf");
+}
+@font-face {
+  font-family: "work-sans-semibold";
+  src: url("./work-sans/WorkSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "urbanist-semibold";
+  src: url("./urbanist/Urbanist-SemiBold.ttf");
+}
+
 /* variables */
 :root {
   --main-color-black: #35353a;
@@ -15,6 +37,7 @@
   margin: 0;
   box-sizing: border-box;
   transition: 0.1s linear all;
+  font-family: "bahnschrift", sans-serif;
 }
 p {
   font-size: 14px;
@@ -39,10 +62,12 @@ h1 span {
 h2 {
   font-size: 32px;
   font-weight: 700;
+  font-family: "work-sans-bold", sans-serif;
 }
 h2 span {
   font-size: 32px;
   font-weight: 700;
+  font-family: "work-sans-bold", sans-serif;
 }
 h3 {
   font-size: 18px;
@@ -307,6 +332,10 @@ nav .mobile_menu_closer {
 }
 .banner_carousel #banner_carousel .banner_carousel_item .banner_left h1 {
   width: 520px;
+  font-family: "work-sans-bold", sans-serif;
+}
+.banner_carousel #banner_carousel .banner_carousel_item .banner_left h1 span {
+  font-family: "work-sans-bold", sans-serif;
 }
 .banner_carousel #banner_carousel .banner_left .enquire_button {
   margin-top: 32px;
@@ -597,6 +626,7 @@ nav .mobile_menu_closer {
   -webkit-text-stroke: 0.5px white;
   text-stroke: 0.5px white;
   font-weight: 600;
+  font-family: "urbanist-semibold", sans-serif;
 }
 .services_section .service_card .service_card_wrapper svg {
   width: 48px;
@@ -607,7 +637,7 @@ nav .mobile_menu_closer {
   margin-top: 24px;
   color: var(--main-color-white);
   letter-spacing: -0.18px;
-  font-family: "Work Sans", sans-serif;
+  font-family: "work-sans-semibold", sans-serif;
 }
 .services_section .service_card .service_card_wrapper p {
   margin-top: 8px;
@@ -1360,6 +1390,7 @@ nav .mobile_menu_closer {
 .locations_section .location_cards .location_card h4 {
   color: var(--main-color-white);
   line-height: 140%;
+  font-family: "work-sans-semibold", sans-serif;
 }
 .locations_section .location_cards .location_card p {
   margin-top: 8px;
@@ -1413,7 +1444,7 @@ footer .footer_top > div h3 {
   font-size: 20px;
   font-weight: 700;
   color: var(--main-color-white);
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work-sans-semibold", sans-serif;
 }
 footer .footer_top > div ul {
   display: flex;
