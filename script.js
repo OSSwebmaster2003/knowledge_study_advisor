@@ -117,3 +117,17 @@ function toggleItem() {
     this.parentNode.className = "faq_accordion_item  open";
   }
 }
+
+// mobile navbar
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("mobile_menu_opener");
+  const closeButton = document.getElementById("mobile_menu_closer");
+  const navbarLinks = document.getElementById("navbar");
+
+  toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+  });
+  closeButton.addEventListener("click", () => {
+    navbarLinks.classList.remove("active");
+  });
+});
