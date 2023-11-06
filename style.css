@@ -1534,6 +1534,27 @@ footer .footer_bottom {
   .services_section {
     padding: 80px 50px;
   }
+  .reviews_section {
+    padding: 0 50px;
+  }
+  .reviews_section #reviews_carousel .owl-nav {
+    bottom: 120px;
+  }
+  .reviews_section .reviews-counter {
+    bottom: 125px;
+    right: 290px;
+  }
+  .reviews_section .reviews_item .review_text {
+    width: 500px;
+  }
+  .reviews_section .reviews_item .review_video {
+    width: 550px;
+    height: 680px;
+  }
+  .reviews_section .reviews_item .review_video .for_image {
+    width: 100%;
+    height: 660px;
+  }
 }
 @media (max-width: 1200px) {
   .banner_carousel #banner_carousel .banner_carousel_item {
@@ -1560,6 +1581,30 @@ footer .footer_bottom {
   }
   .contact_form form {
     width: calc(100% - 555px);
+  }
+  .reviews_section .reviews_item .review_video {
+    width: 450px;
+    height: 540px;
+  }
+  .reviews_section .reviews_item .review_video .for_image {
+    width: 100%;
+    height: calc(100% - 20px);
+  }
+  .reviews_section .reviews_item .review_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  .reviews_section #reviews_carousel .owl-nav {
+    bottom: 40px;
+  }
+  .reviews_section .reviews-counter {
+    bottom: 45px;
+  }
+  .reviews_section .reviews_item .review_text .review_card {
+    margin-top: 15px;
   }
 }
 @media (max-width: 1130px) {
@@ -1601,6 +1646,16 @@ footer .footer_bottom {
   }
   .services_section .service_card .service_card_wrapper h3 {
     margin-top: 15px;
+  }
+}
+@media (max-width: 1050px) {
+  .reviews_section .reviews_item .review_video {
+    width: 390px;
+    height: 500px;
+  }
+  .reviews_section .reviews_item .review_video .for_image svg {
+    width: 70px;
+    height: 70px;
   }
 }
 @media (max-width: 1010px) {
@@ -1667,6 +1722,24 @@ footer .footer_bottom {
   }
   .services_section .services_section_wrapper h2 {
     text-align: center;
+  }
+  .reviews_section {
+    padding: 0 20px;
+  }
+  .reviews_section .reviews-counter {
+    right: 260px;
+  }
+}
+@media (max-width: 950px) {
+  .reviews_section .reviews_item .review_text {
+    width: 400px;
+    margin-top: -50px;
+  }
+  .reviews_section #reviews_carousel .owl-nav {
+    right: 150px;
+  }
+  .reviews_section .reviews-counter {
+    right: 210px;
   }
 }
 @media (max-width: 900px) {
@@ -1805,6 +1878,10 @@ footer .footer_bottom {
   h3 {
     font-size: 16px;
   }
+  .reviews_section .reviews_item .review_text .review_card p {
+    font-size: 15px;
+    line-height: 150%;
+  }
   .search_header .search_header_right .search_input {
     height: 36px;
   }
@@ -1832,6 +1909,59 @@ footer .footer_bottom {
   }
   .services_section .services_section_wrapper .services > div {
     padding: 30px 15px 55px 15px;
+  }
+  .reviews_section .reviews_item .review_text {
+    width: 350px;
+  }
+  .reviews_section #reviews_carousel .owl-nav {
+    right: 120px;
+  }
+  .reviews_section .reviews-counter {
+    right: 180px;
+  }
+}
+@media (max-width: 800px) {
+  .reviews_section .reviews_item .review_video {
+    width: auto;
+    height: auto;
+  }
+  .reviews_section .reviews_item .review_video .for_image {
+    display: none;
+  }
+  .reviews_section .reviews_item .review_text {
+    width: 100%;
+  }
+  .reviews_section .reviews_item .review_text .review_card {
+    min-height: 200px;
+  }
+  .reviews_section .reviews_item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .reviews_section .reviews_item .review_video .student_name {
+    position: relative;
+    left: inherit;
+    bottom: inherit;
+  }
+  .reviews_section #reviews_carousel .owl-nav {
+    left: calc(50% - 150px);
+    bottom: 20px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .reviews_section .reviews_item .review_text {
+    margin-top: 0;
+  }
+  .reviews_section .reviews-counter {
+    left: calc(50% - 10px);
+    bottom: 25px;
   }
 }
 @media (max-width: 700px) {
@@ -1957,6 +2087,10 @@ footer .footer_bottom {
     margin-top: 50px;
     padding: 50px 10px;
   }
+  .reviews_section {
+    margin-top: 50px;
+    padding: 0 10px;
+  }
 }
 @media (max-width: 450px) {
   .services_section .services_section_wrapper .services {
@@ -1965,6 +2099,12 @@ footer .footer_bottom {
   }
   .services_section .service_card .service_card_wrapper p {
     font-size: 15px;
+  }
+  .reviews_section .reviews_item {
+    gap: 15px;
+  }
+  .reviews_section .reviews_item .review_video .student_name {
+    display: none;
   }
 }
 @media (max-width: 400px) {
@@ -1988,6 +2128,13 @@ footer .footer_bottom {
   }
   nav ul {
     width: 90%;
+  }
+  .reviews_section .reviews_item .review_text .review_card {
+    padding: 10px;
+  }
+  .reviews_section .reviews_item .review_text .review_card p {
+    padding: 10px;
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 360px) {
