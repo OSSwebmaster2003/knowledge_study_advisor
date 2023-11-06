@@ -1327,12 +1327,18 @@ nav .mobile_menu_closer {
   color: var(--neutral-grey-05);
 }
 .locations_section h2 {
-  color: var(--main-color-white);
   font-size: 32px;
   font-weight: 700;
+  color: var(--main-color-white);
 }
 .locations_section h2 span {
   color: var(--main-color-orange);
+}
+.locations_section .news_letter_subscription .subscription_text h2 {
+  color: var(--main-color-blue);
+}
+.locations_section .news_letter_subscription .subscription_text h2 span {
+  color: var(--main-color-purple);
 }
 .locations_section .location_cards {
   margin-top: 32px;
@@ -1362,6 +1368,13 @@ nav .mobile_menu_closer {
   justify-content: flex-start;
   gap: 6px;
   color: var(--main-color-white);
+}
+.locations_section .location_cards .location_card p svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+.locations_section .location_cards .location_card p span {
+  width: calc(100% - 26px);
 }
 .locations_section .location_cards .location_card a {
   margin-top: 16px;
@@ -1479,6 +1492,12 @@ footer .footer_bottom {
 }
 
 /* header media queries */
+@media (max-width: 1400px) {
+  .locations_section .news_letter_subscription {
+    width: 1000px;
+    left: calc(50% - 500px);
+  }
+}
 @media (max-width: 1300px) {
   .insights_section .insights_news .news_cards .news_card .card_text h4 {
     width: auto;
@@ -1614,6 +1633,9 @@ footer .footer_bottom {
   }
   .insights_section .insights_image .insight_main_card .date {
     left: calc(50% - 68px);
+  }
+  .locations_section {
+    padding: 145px 50px;
   }
 }
 @media (max-width: 1200px) {
@@ -1761,6 +1783,11 @@ footer .footer_bottom {
   .insights_section .insights_news .news_cards .news_card .card_text {
     width: calc(100% - 168px);
   }
+  .locations_section .news_letter_subscription {
+    width: 850px;
+    padding: 0 30px;
+    left: calc(50% - 425px);
+  }
 }
 @media (max-width: 1050px) {
   .reviews_section .reviews_item .review_video {
@@ -1889,6 +1916,31 @@ footer .footer_bottom {
   }
   .faq_section .faq_accordion .faq_accordion_item .faq_accordion_heading h3 {
     font-size: 18px;
+  }
+  .locations_section .location_cards .location_card {
+    height: 150px;
+  }
+  .locations_section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .locations_section .news_letter_subscription {
+    width: 700px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    left: calc(50% - 350px);
+  }
+  .locations_section .news_letter_subscription .subscription_text {
+    align-items: center;
+    justify-content: center;
+  }
+  .locations_section .news_letter_subscription form {
+    width: 100%;
+  }
+  .locations_section {
+    padding: 120px 20px;
+    padding-bottom: 80px;
   }
 }
 @media (max-width: 950px) {
@@ -2251,6 +2303,32 @@ footer .footer_bottom {
     width: 130px;
     height: 36px;
   }
+  .locations_section .news_letter_subscription {
+    width: 500px;
+    left: calc(50% - 250px);
+    gap: 15px;
+    height: 160px;
+    top: -80px;
+  }
+  .locations_section .news_letter_subscription form .input_wrapper {
+    height: 36px;
+  }
+  .locations_section .news_letter_subscription form .input_wrapper button {
+    height: 36px;
+  }
+  .locations_section h2 {
+    font-size: 26px;
+  }
+  .locations_section {
+    padding-bottom: 30px;
+  }
+  .locations_section .location_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 16px;
+  }
 }
 @media (max-width: 700px) {
   header .left_header div span {
@@ -2466,6 +2544,21 @@ footer .footer_bottom {
   .insights_section .insights_news .news_cards {
     border: none;
   }
+  .insights_section {
+    margin-bottom: 30px;
+  }
+  .locations_section {
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .locations_section .news_letter_subscription {
+    display: none;
+  }
 }
 @media (max-width: 450px) {
   .services_section .services_section_wrapper .services {
@@ -2537,6 +2630,13 @@ footer .footer_bottom {
     .events_inner_card
     .card_text {
     width: calc(100% - 108px);
+  }
+  .locations_section .location_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
   }
 }
 @media (max-width: 360px) {
