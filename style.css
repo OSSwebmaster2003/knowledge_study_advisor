@@ -89,7 +89,7 @@ body {
 }
 /* header */
 header {
-  padding: 11.5px calc((100% - 1440px) / 2);
+  padding: 11.5px calc((100% - 1240px) / 2);
   width: 100%;
   background: var(--main-color-black);
   display: flex;
@@ -152,7 +152,7 @@ header .right_header svg:hover {
 /* search header  */
 .search_header {
   width: 100%;
-  padding: 10px calc((100% - 1440px) / 2);
+  padding: 10px calc((100% - 1240px) / 2);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -235,7 +235,7 @@ header .right_header svg:hover {
 }
 nav {
   width: 100%;
-  padding: 0 calc((100% - 1440px) / 2);
+  padding: 0 calc((100% - 1240px) / 2);
   background: var(--main-color-linear);
 }
 nav ul {
@@ -366,7 +366,7 @@ nav ul li .count_events {
 
 .destinations_carousel {
   width: 100%;
-  padding: 0 calc((100% - 1440px) / 2);
+  padding: 0 calc((100% - 1240px) / 2);
   margin-top: 100px;
   position: relative;
 }
@@ -430,9 +430,9 @@ nav ul li .count_events {
   position: absolute;
   bottom: 22.5px;
   height: 5px;
-  width: calc(100% - 550px);
+  width: calc(100% - 760px);
   margin: 0 auto;
-  left: 275px;
+  left: 380px;
 }
 
 /* contactv form section */
@@ -983,7 +983,7 @@ nav ul li .count_events {
 .faq_section {
   margin-top: 100px;
   width: 100%;
-  padding: 89px calc((100% - 1140px) / 2);
+  padding: 89px calc((100% - 1040px) / 2);
   background: var(--main-color-linear);
   display: flex;
   align-items: center;
