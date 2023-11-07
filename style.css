@@ -534,6 +534,9 @@ nav .mobile_menu_closer {
   justify-content: space-between;
   height: 46px;
 }
+.contact_form form .accordion .accordion_header p {
+  color: var(--neutral-grey-05);
+}
 .contact_form form .accordion .accordion_header svg {
   fill: var(--neutral-grey-03);
 }
@@ -548,11 +551,17 @@ nav .mobile_menu_closer {
 .contact_form form .accordion .show {
   display: block;
 }
+/* lets change checkbox */
 .contact_form form .checkbox {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
+}
+.contact_form form .checkbox input {
+  accent-color: var(--main-color-purple);
+  width: 16px;
+  height: 16px;
 }
 .contact_form form .checkbox p {
   font-size: 14px;
@@ -787,7 +796,7 @@ nav .mobile_menu_closer {
 }
 .reviews_section #reviews_carousel .owl-nav {
   position: absolute;
-  bottom: 200px;
+  bottom: 170px;
   right: 200px;
   display: flex;
   align-items: center;
@@ -796,8 +805,8 @@ nav .mobile_menu_closer {
 }
 .reviews_section .reviews-counter {
   position: absolute;
-  bottom: 205px;
-  right: 566px;
+  bottom: 175px;
+  right: calc(50% - 380px);
   color: var(--main-color-blue);
 }
 
@@ -814,6 +823,7 @@ nav .mobile_menu_closer {
   gap: 40px;
 }
 .events_section .events_wrapper {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -933,7 +943,7 @@ nav .mobile_menu_closer {
 .events_section .events_wrapper .events_carousel progress {
   position: absolute;
   width: calc(572px - 100px);
-  left: 98px;
+  left: 70px;
   height: 5px;
   bottom: 38px;
 }
@@ -1622,12 +1632,14 @@ footer .footer_bottom {
   .events_section .events_wrapper .events_carousel {
     width: 572px;
     padding-bottom: 20px;
+    position: relative;
   }
   .events_section .events_wrapper .events_image {
     width: calc(100% - 632px);
   }
   .events_section .events_wrapper .events_carousel progress {
     bottom: 12px;
+    left: 50px;
   }
   .glimpses_section {
     padding: 0 50px;
@@ -1954,7 +1966,7 @@ footer .footer_bottom {
   }
   .events_section .events_wrapper .events_carousel progress {
     width: calc(450px - 60px);
-    left: 50px;
+    left: 30px;
   }
   .faq_section {
     padding: 90px 50px;
@@ -2037,7 +2049,7 @@ footer .footer_bottom {
   }
   .events_section .events_wrapper .events_carousel progress {
     width: calc(450px - 140px);
-    left: 55px;
+    left: 35px;
   }
   .glimpses_section .glimpse_images .top_images .image1 {
     width: 900px;
@@ -2619,20 +2631,22 @@ footer .footer_bottom {
   .insights_section .insights_news .news_cards {
     border: none;
   }
-  .insights_section {
-    margin-bottom: 30px;
-  }
   .locations_section {
     margin-top: 50px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 50px;
     padding-bottom: 50px;
   }
 }
 @media (max-width: 550px) {
   .locations_section .news_letter_subscription {
     display: none;
+  }
+  .locations_section {
+    padding-top: 50px;
+  }
+  .insights_section {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 450px) {
