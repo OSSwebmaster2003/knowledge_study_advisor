@@ -151,31 +151,70 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// filter dropdown
-
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdownButton = document.querySelector(".dropdown_header");
-  const dropdownContent = document.querySelector(".dropdown_body");
-
-  dropdownButton.addEventListener("click", () => {
-    dropdownContent.style.display =
-      dropdownContent.style.display === "block" ? "none" : "block";
-  });
-
-  // Close the dropdown when clicking outside of it
-  window.addEventListener("click", (event) => {
-    if (
-      !event.target.matches(".dropdown_header") &&
-      !event.target.matches(".dropdown_body")
-    ) {
-      dropdownContent.style.display = "none";
-    }
-  });
-});
-
 // fancybox
 $(".card-deck a").fancybox({
   caption: function (instance, item) {
     return $(this).parent().find(".card-text").html();
   },
+});
+
+// filter dropdown
+$(".custom-select").each(function () {
+  var classes = $(this).attr("class"),
+    id = $(this).attr("id"),
+    name = $(this).attr("name");
+  var template = '<div class="' + classes + '">';
+  template +=
+    '<span class="custom-select-trigger">' +
+    $(this).attr("placeholder") +
+    "</span>";
+  template += '<div class="custom-options">';
+  $(this)
+    .find("option")
+    .each(function () {
+      template +=
+        '<span class="custom-option ' +
+        $(this).attr("class") +
+        '" data-value="' +
+        $(this).attr("value") +
+        '">' +
+        $(this).html() +
+        "</span>";
+    });
+  template += "</div></div>";
+
+  $(this).wrap('<div class="custom-select-wrapper"></div>');
+  $(this).hide();
+  $(this).after(template);
+});
+$(".custom-option:first-of-type").hover(
+  function () {
+    $(this).parents(".custom-options").addClass("option-hover");
+  },
+  function () {
+    $(this).parents(".custom-options").removeClass("option-hover");
+  }
+);
+$(".custom-select-trigger").on("click", function () {
+  $("html").one("click", function () {
+    $(".custom-select").removeClass("opened");
+  });
+  $(this).parents(".custom-select").toggleClass("opened");
+  event.stopPropagation();
+});
+$(".custom-option").on("click", function () {
+  $(this)
+    .parents(".custom-select-wrapper")
+    .find("select")
+    .val($(this).data("value"));
+  $(this)
+    .parents(".custom-options")
+    .find(".custom-option")
+    .removeClass("selection");
+  $(this).addClass("selection");
+  $(this).parents(".custom-select").removeClass("opened");
+  $(this)
+    .parents(".custom-select")
+    .find(".custom-select-trigger")
+    .text($(this).text());
 });
