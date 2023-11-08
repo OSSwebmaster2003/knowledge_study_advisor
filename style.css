@@ -210,11 +210,91 @@ header .mobile_menu_opener {
 .search_header .search_header_right .search_input .filter_dropdown {
   width: 130px;
   height: 100%;
+  position: relative;
+  padding: 0 10px;
+  border: none;
   border-right: 0.5px solid var(--neutral-grey-03);
+  outline: none;
+  background: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  border-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.search_header
+  .search_header_right
+  .search_input
+  .filter_dropdown
+  .dropdown_header {
+  width: 95%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  background: inherit;
+  border-radius: 20px;
+}
+.search_header
+  .search_header_right
+  .search_input
+  .filter_dropdown
+  .dropdown_body {
+  width: 130px;
+  height: auto;
+  padding: 20px 0px;
+  background-color: var(--main-color-white);
+  z-index: 3;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: absolute;
+  top: calc(100% + 10px);
+  display: none;
+  border: 0.5px solid var(--neutral-grey-03);
+}
+.search_header
+  .search_header_right
+  .search_input
+  .filter_dropdown
+  .dropdown_body
+  ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.search_header
+  .search_header_right
+  .search_input
+  .filter_dropdown
+  .dropdown_body
+  ul
+  li {
+  width: 100%;
+  padding: 7px 10px;
+}
+.search_header
+  .search_header_right
+  .search_input
+  .filter_dropdown
+  .dropdown_body
+  ul
+  li:hover {
+  background-color: var(--neutral-grey-01);
+}
+.search_header
+  .search_header_right
+  .search_input
+  .filter_dropdown
+  .dropdown_body
+  ul
+  li
+  a {
+  color: var(--main-color-black);
 }
 .search_header .search_header_right .search_input .filter_dropdown p {
   font-size: 13px;
@@ -465,9 +545,10 @@ nav .mobile_menu_closer {
   position: absolute;
   bottom: 22.5px;
   height: 5px;
-  width: calc(100% - 760px);
+  width: calc(1240px - 40px - 48px);
   margin: 0 auto;
-  left: 380px;
+  left: calc((100% - 1240px) / 2 + 44px);
+  accent-color: var(--main-color-purple);
 }
 
 /* contactv form section */
@@ -938,14 +1019,15 @@ nav .mobile_menu_closer {
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  bottom: -20px;
+  bottom: -50px;
 }
 .events_section .events_wrapper .events_carousel progress {
   position: absolute;
-  width: calc(572px - 100px);
-  left: 70px;
+  width: calc(620px - 40px - 48px);
+  left: 40px;
   height: 5px;
-  bottom: 38px;
+  bottom: 8px;
+  accent-color: var(--main-color-purple);
 }
 
 /* glimpses section */
@@ -1596,8 +1678,8 @@ footer .footer_bottom {
     padding: 0 50px;
   }
   .destinations_carousel progress {
-    width: calc(100% - 300px);
-    left: 150px;
+    width: calc((100% - 100px) - 88px);
+    left: calc(50px + 44px);
   }
   .contact_form {
     padding: 0 50px;
@@ -1638,8 +1720,9 @@ footer .footer_bottom {
     width: calc(100% - 632px);
   }
   .events_section .events_wrapper .events_carousel progress {
-    bottom: 12px;
-    left: 50px;
+    width: calc(100% - 88px);
+    bottom: -17px;
+    left: 44px;
   }
   .glimpses_section {
     padding: 0 50px;
@@ -1693,10 +1776,6 @@ footer .footer_bottom {
     background-size: contain;
     background-position: bottom;
   }
-  .destinations_carousel progress {
-    width: calc(100% - 200px);
-    left: 100px;
-  }
   .destinations_carousel #destinations_carousel .destination_card .card_image {
     height: 170px;
   }
@@ -1747,9 +1826,6 @@ footer .footer_bottom {
   .events_section .events_wrapper .events_image {
     width: calc(100% - 510px);
     height: 500px;
-  }
-  .events_section .events_wrapper .events_carousel progress {
-    width: calc(450px - 100px);
   }
   .glimpses_section .glimpse_images .top_images .image1 {
     width: 120px;
@@ -1887,6 +1963,10 @@ footer .footer_bottom {
   }
 }
 @media (max-width: 1000px) {
+  .destinations_carousel progress {
+    width: calc((100% - 20px) - 88px);
+    left: calc(10px + 44px);
+  }
   footer .footer_top {
     padding: 0 20px;
     padding-bottom: 24px;
@@ -2308,8 +2388,8 @@ footer .footer_bottom {
     width: 100%;
   }
   .events_section .events_wrapper .events_carousel progress {
-    width: calc(100% - 140px);
-    left: 70px;
+    width: calc(100% - 88px);
+    left: 44px;
   }
   .glimpses_section .glimpse_images .top_images {
     display: flex;

@@ -150,3 +150,32 @@ document.addEventListener("DOMContentLoaded", function () {
     navbarLinks.classList.remove("active");
   });
 });
+
+// filter dropdown
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownButton = document.querySelector(".dropdown_header");
+  const dropdownContent = document.querySelector(".dropdown_body");
+
+  dropdownButton.addEventListener("click", () => {
+    dropdownContent.style.display =
+      dropdownContent.style.display === "block" ? "none" : "block";
+  });
+
+  // Close the dropdown when clicking outside of it
+  window.addEventListener("click", (event) => {
+    if (
+      !event.target.matches(".dropdown_header") &&
+      !event.target.matches(".dropdown_body")
+    ) {
+      dropdownContent.style.display = "none";
+    }
+  });
+});
+
+// fancybox
+$(".card-deck a").fancybox({
+  caption: function (instance, item) {
+    return $(this).parent().find(".card-text").html();
+  },
+});
